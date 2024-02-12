@@ -1,0 +1,226 @@
+body {
+    background-color: rgb(220,220,220);
+    height: 900px;
+    overflow-y: hidden;
+}
+
+h1 {
+  color: beige;
+  text-align: center;
+  font-size: 100px;
+  font-family: Yatra One; 
+}
+
+p {
+  font-family: Yatra One;
+  font-size: 40px;
+  color: rgb(220, 220, 220);
+  text-shadow: 0px 0px 8px rgb(94, 93, 92);
+  text-align: center;
+}
+
+a {
+  font-family: Yatra One;
+  font-size: 40px;
+  color: rgb(220, 220, 220);
+  text-shadow: 0px 0px 8px rgb(94, 93, 92);
+  text-decoration: none;
+}
+
+
+#img1 {
+    position: absolute;
+    top: 0px;
+    left: 1300px;
+}
+
+#img2 {
+    position: absolute;
+    top: 360px;
+    left: 0px;
+}
+
+#img3 {
+    position: absolute;
+    top: -90px;
+    left: 900px;
+}
+
+#img4 {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+}
+
+#img5 {
+    position: absolute;
+    top: 600px;
+    left: 450px;
+}
+
+#img6 {
+    position: absolute;
+    top: 500px;
+    left: 1100px;
+}
+
+#img7 {
+    position: absolute;
+    top: 200px;
+    left: 700px;
+}
+
+.positionlink {
+    position: absolute;
+    top: 900px;
+    left: 1200px;
+}
+
+* {box-sizing: border-box;}
+
+.img-zoom-container {
+  position: relative;
+}
+
+.img-zoom-lens {
+  position: absolute;
+  /*set the size of the lens:*/
+  width: 40px;
+  height: 40px;
+}
+
+.img-zoom-result {
+  /*set the size of the result div:*/
+  width: 300px;
+  height: 330px;
+  box-shadow: 0px 0px 10px rgb(94, 93, 92);
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  float: right;
+  z-index: 300;
+  border-radius: 50%;
+}
+
+.img-zoom-result2 {
+  /*set the size of the result div:*/
+  width: 250px;
+  height: 250px;
+  box-shadow: 0px 0px 10px rgb(94, 93, 92);
+  position: absolute;
+  left: 240px;
+  top: 770px;
+  float: right;
+  z-index: 300;
+  border-radius: 50%;
+}
+
+.img-zoom-result3 {
+  /*set the size of the result div:*/
+  width: 240px;
+  height: 200px;
+  box-shadow: 0px 0px 10px rgb(94, 93, 92);
+  position: absolute;
+  left: 800px;
+  top: 00px;
+  float: right;
+  z-index: 300;
+  border-radius: 50%;
+}
+
+.img-zoom-result4 {
+  /*set the size of the result div:*/
+  width: 290px;
+  height: 320px;
+  box-shadow: 0px 0px 10px rgb(94, 93, 92);
+  position: absolute;
+  left: 300px;
+  top: 10px;
+  float: right;
+  z-index: 300;
+  border-radius: 50%;
+}
+
+.img-zoom-result5 {
+  /*set the size of the result div:*/
+  width: 220px;
+  height: 200px;
+  box-shadow: 0px 0px 10px rgb(94, 93, 92);
+  position: absolute;
+  left: 1200px;
+  top: 450px;
+  float: right;
+  z-index: 300;
+  border-radius: 50%;
+}
+
+.img-zoom-result6 {
+  /*set the size of the result div:*/
+  width: 210px;
+  height: 200px;
+  box-shadow: 0px 0px 10px rgb(94, 93, 92);
+  position: absolute;
+  left: 800px;
+  top: 300px;
+  float: right;
+  z-index: 300;
+  border-radius: 50%;
+}
+
+.img-zoom-result7 {
+  /*set the size of the result div:*/
+  width: 300px;
+  height: 340px;
+  box-shadow: 0px 0px 10px rgb(94, 93, 92);
+  position: absolute;
+  left: 400px;
+  top: 300px;
+  float: right;
+  z-index: 300;
+  border-radius: 50%;
+}
+
+.scroll-left {
+height: 50px; 
+overflow: hidden;
+position: relative;
+top:350px;
+}
+.scroll-left p {
+position: absolute;
+width: 100%;
+height: 100%;
+margin: 0;
+line-height: 50px;
+text-align: center;
+/* Starting position */
+-moz-transform:translateX(100%);
+-webkit-transform:translateX(100%); 
+transform:translateX(100%);
+/* Apply animation to this element */ 
+-moz-animation: scroll-left 20s linear infinite;
+-webkit-animation: scroll-left 20s linear infinite;
+animation: scroll-left 20s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+0% { -moz-transform: translateX(100%); }
+100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-left {
+0% { -webkit-transform: translateX(100%); }
+100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scroll-left {
+0% { 
+-moz-transform: translateX(100%); /* Browser bug fix */
+-webkit-transform: translateX(100%); /* Browser bug fix */
+transform: translateX(100%); 
+}
+100% { 
+-moz-transform: translateX(-100%); /* Browser bug fix */
+-webkit-transform: translateX(-100%); /* Browser bug fix */
+transform: translateX(-100%); 
+}
+}
+
